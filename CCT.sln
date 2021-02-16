@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCT", "CCT\CCT.csproj", "{32658CA8-9CEE-43D2-A6DA-F420EE11504B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCT.Testes", "CCT.Testes\CCT.Testes.csproj", "{0597FD94-B11A-4457-A5B4-390E23B55FD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32658CA8-9CEE-43D2-A6DA-F420EE11504B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32658CA8-9CEE-43D2-A6DA-F420EE11504B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32658CA8-9CEE-43D2-A6DA-F420EE11504B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32658CA8-9CEE-43D2-A6DA-F420EE11504B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0597FD94-B11A-4457-A5B4-390E23B55FD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0597FD94-B11A-4457-A5B4-390E23B55FD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0597FD94-B11A-4457-A5B4-390E23B55FD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0597FD94-B11A-4457-A5B4-390E23B55FD7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E87174D8-AD47-430B-9734-F01B051AC2EC}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+
+<Dataset>
+
+  <!-- Bancos: MSSQL (SQL Server) / ORACLE -->
+
+  <ADM>
+    <Banco>MSSQL</Banco>
+    <Servidor>CHRONOS_R3</Servidor>
+    <Schema>REDEX</Schema>
+    <Usuario>REDEX</Usuario>
+    <Senha>REDEX</Senha>
+    <CPFCertificado>41197505822</CPFCertificado>
+    <Url>https://portalunico.siscomex.gov.br</Url>
+    <Perfil>DEPOSIT</Perfil>
+    <MaxTentativas>1</MaxTentativas>
+  </ADM>
+
+</Dataset>

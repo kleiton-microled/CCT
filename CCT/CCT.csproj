@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{32658CA8-9CEE-43D2-A6DA-F420EE11504B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CCT</RootNamespace>
+    <AssemblyName>CCT</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icone.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\..\..\Desktop\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classes\Data\BD.cs" />
+    <Compile Include="classes\DTO\Critica.cs" />
+    <Compile Include="classes\DTO\DadosResumidos.cs" />
+    <Compile Include="classes\DTO\RetornoServico.cs" />
+    <Compile Include="classes\Helpers\XmlHelper.cs" />
+    <Compile Include="classes\HttpRequest\ConsultarDadosResumidos.cs" />
+    <Compile Include="classes\HttpRequest\HttpBase\HttpClientBase.cs" />
+    <Compile Include="classes\HttpRequest\HttpBase\HttpClientGET.cs" />
+    <Compile Include="classes\HttpRequest\RecepcoesDocumentoCarga.cs" />
+    <Compile Include="classes\HttpRequest\RecepcoesConteineres.cs" />
+    <Compile Include="classes\HttpRequest\EntregasDocumentoCarga.cs" />
+    <Compile Include="classes\HttpRequest\HttpBase\HttpClientPOST.cs" />
+    <Compile Include="classes\DAO\SiscomexDAO.cs" />
+    <Compile Include="classes\HttpRequest\EntregasConteineres.cs" />
+    <Compile Include="classes\HttpRequest\CadastrarDUE.cs" />
+    <Compile Include="classes\HttpRequest\UnitilizarCarga.cs" />
+    <Compile Include="classes\HttpRequest\RecepcoesNFE.cs" />
+    <Compile Include="classes\HttpRequest\ManifestacoesExportacao.cs" />
+    <Compile Include="classes\HttpRequest\RecepcoesNFF.cs" />
+    <Compile Include="classes\Log.cs" />
+    <Compile Include="classes\Parametros.cs" />
+    <Compile Include="classes\HttpRequest\RetornoAPI.cs" />
+    <Compile Include="classes\DTO\SiscomexDTO.cs" />
+    <Compile Include="classes\Auth\Autenticador.cs" />
+    <Compile Include="classes\Auth\Certificado.cs" />
+    <Compile Include="classes\Auth\Token.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\codecracker.CSharp.1.0.3\analyzers\dotnet\cs\CodeCracker.Common.dll" />
+    <Analyzer Include="..\packages\codecracker.CSharp.1.0.3\analyzers\dotnet\cs\CodeCracker.CSharp.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BD.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="icone.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
